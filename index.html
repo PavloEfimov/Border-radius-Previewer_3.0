@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Border-radius Previewer</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="top_div">
+          <input type="number" name="" id="inpTopLeft" class="top_div_left" />
+          <input type="number" name="" id="inpTopRight" class="top_div_right" />
+        </div>
+        <div class="center_div">
+          <div class="left_div">
+            <input type="number" name="" id="inpLeftTop" />
+            <input type="number" name="" id="inpLeftBottom" />
+          </div>
+          <div class="show_div" id="showDiv"></div>
+          <div class="right_div">
+            <input type="number" name="" id="inpRightTop" />
+            <input type="number" name="" id="inpRightBottom" />
+          </div>
+        </div>
+        <div class="bottom_div">
+          <input
+            type="number"
+            name=""
+            id="inpBottomLeft"
+            class="bottom_div_left"
+          />
+          <input
+            type="number"
+            name=""
+            id="inpBottomRight"
+            class="bottom_div_right"
+          />
+        </div>
+      </div>
+      <div class="control_div">
+        <div class="btn_div">
+          <button id="btnCopy">copy CSS</button>
+        </div>
+        <div class="reset_div">
+          <button id="btnReset">reset</button>
+        </div>
+        <div class="choise_div">
+          <p>possible values of the border-radius</p>
+          <input type="radio" name="BR" id="choise4" value="4" checked />
+          <label for="choise4">4 values</label>
+          <input type="radio" name="BR" id="choise8" value="8" />
+          <label for="choise8">8 values</label>
+        </div>
+        <div class="measure_div">
+          <p>possible values of measure</p>
+          <input type="radio" name="MEAS" id="measPX" value="px" checked />
+          <label for="choise4">px</label>
+          <input type="radio" name="MEAS" id="measPCT" value="%" />
+          <label for="choise8">%</label>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
